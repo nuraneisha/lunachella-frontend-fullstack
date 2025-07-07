@@ -12,7 +12,7 @@ export default function Cards() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:3005/kuala-lumpur")
+        fetch("https://lunachella-scrapper-fullstack.onrender.com/kuala-lumpur")
             .then((response) => response.json())
             .then((json) => Array.isArray(json) && setData(json))
             .catch((error) => console.error("Error fetching:", error));

@@ -5,7 +5,7 @@ export default function Venue() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3005/kuala-lumpur")
+    fetch("https://lunachella-scrapper-fullstack.onrender.com/kuala-lumpur")
       .then((response) => response.json())
       .then((json) => {
         if (Array.isArray(json)) {
